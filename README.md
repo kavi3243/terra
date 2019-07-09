@@ -1,6 +1,7 @@
-#Terraform  
+# Terraform  
 This project will create two EC2 unstance under dedicated VPC which is under ELB.
 Prerequisite:
+Install the terraform (https://www.terraform.io/) 
 Make sure you are passing the appropriate key in *public_key* scetion.
 
 To initialise the provider plugins and etc
