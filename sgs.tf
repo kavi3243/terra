@@ -1,7 +1,7 @@
 resource "aws_security_group" "web" {
   name        = "allow_http"
   description = "Allow inbound trafic httpd"
-  vpc_id      = "${aws_vpc.my_vpc.id}"
+  vpc_id      = aws_vpc.my_vpc.id
 
   ingress {
     from_port   = 22
@@ -17,3 +17,4 @@ resource "aws_security_group" "web" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
